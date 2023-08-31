@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "165931092164",
+    "project_id": "ansi-3f03e",
+    "storage_bucket": "ansi-3f03e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:165931092164:android:5fa3a16c444b5d946aa191",
+        "android_client_info": {
+          "package_name": "com.ansi.scouting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "165931092164-k3rjpjnd47jrjv2qbvbjjil0da5fhvag.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ansi.scouting",
+            "certificate_hash": "d7189f31b21710574ce37b58ea85f031eac2839b"
+          }
+        },
+        {
+          "client_id": "165931092164-2geqjv1maauo0lle97bgkq2185106se3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8jV1cJimVWBXiGmBX8SyMcgyxr9hcJuU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "165931092164-2geqjv1maauo0lle97bgkq2185106se3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

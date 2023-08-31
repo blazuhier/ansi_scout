@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Apariencia básica del texto. -->
+    <style name="TextAppearance">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- Estilo para campos ingresables de formuilarios. -->
+    <style name="InputTextViewStyle" parent="StateInputStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">@dimen/thirteen_margin</item>
+        <item name="android:paddingRight">@dimen/thirteen_margin</item>
+    </style>
+
+    <!-- Estilo padre de un campo editable con estados. -->
+    <style name="StateInputStyle">
+        <item name="android:maxLength">100</item>
+        <item name="android:imeOptions">actionGo</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:elevation">@dimen/three_margin</item>
+    </style>
+
+    <style name="TextInputLayoutStyleAluxes" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/green_aluxes</item>
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
+
+    <style name="TextInputLayoutStyleTroop" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/troop_color</item>
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
+
+    <style name="Hint" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/aluxes_color</item>
+    </style>
+
+    <!-- Apariencia de texto blanco. -->
+    <style name="TextAppearance.FF" parent="TextAppearance">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+    <!-- Estilo general de un botón. -->
+    <style name="ButtonStyleAluxes" parent ="TextAppearance.AppCompat.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginStart">@dimen/eight_margin</item>
+        <item name="android:layout_marginTop">@dimen/eight_margin</item>
+        <item name="android:layout_marginEnd">@dimen/eight_margin</item>
+        <item name="android:layout_marginBottom">@dimen/eight_margin</item>
+        <item name="android:elevation">@dimen/three_margin</item>
+        <item name="android:minHeight">@dimen/fourty_four_margin</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:foreground">@drawable/ripple_rounded_gray</item>
+        <item name="android:background">@drawable/bg_rounded_enabled</item>
+        <item name="android:textSize">@dimen/min_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+
+    <!-- Estilo general de un botón. -->
+    <style name="ButtonStyleTroop" parent ="TextAppearance.AppCompat.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginStart">@dimen/eight_margin</item>
+        <item name="android:layout_marginTop">@dimen/eight_margin</item>
+        <item name="android:layout_marginEnd">@dimen/eight_margin</item>
+        <item name="android:layout_marginBottom">@dimen/eight_margin</item>
+        <item name="android:elevation">@dimen/three_margin</item>
+        <item name="android:minHeight">@dimen/fourty_four_margin</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:foreground">@drawable/ripple_rounded_gray</item>
+        <item name="android:background">@drawable/bg_rounded_enabled_troop</item>
+        <item name="android:textSize">@dimen/min_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Spinner" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:textColor">@color/primary_blue_kerchief</item>
+        <item name="android:backgroundTint">@color/gray_light_screen</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Estilo general de un botón. -->
+    <style name="ButtonStyleAluxesInfo" parent ="TextAppearance.AppCompat.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginStart">@dimen/eight_margin</item>
+        <item name="android:layout_marginTop">@dimen/eight_margin</item>
+        <item name="android:layout_marginEnd">@dimen/eight_margin</item>
+        <item name="android:layout_marginBottom">@dimen/eight_margin</item>
+        <item name="android:elevation">@dimen/three_margin</item>
+        <item name="android:minHeight">@dimen/fourty_four_margin</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:foreground">@drawable/ripple_rounded_gray</item>
+        <item name="android:background">@drawable/bg_rounded_button_info</item>
+        <item name="android:textSize">@dimen/min_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

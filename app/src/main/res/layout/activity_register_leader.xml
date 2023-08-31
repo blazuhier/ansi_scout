@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.ansi.scouting.activity.aluxes.aluxes_register.NewAluxeRegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/troop_color"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/fifteen_margin">
+
+            <ImageView
+                android:id="@+id/ansi_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/fifteen_margin"
+                android:src="@drawable/img_ansi_min" />
+
+            <TextView
+                android:id="@+id/title_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/tv_title_new_registry"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sub_title_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_grid"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:paddingStart="@dimen/fifty_margin"
+                android:paddingEnd="@dimen/fifty_margin"
+                android:text="@string/tv_sub_title_new_registry_leader"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twenty_margin"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_district_leader"
+                style="@style/TextInputLayoutStyleTroop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tv_district"
+                android:paddingStart="@dimen/thirty_margin"
+                android:paddingEnd="@dimen/thirty_margin"
+                app:errorEnabled="true"
+                app:hintTextColor="@color/primary_blue_kerchief">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_district_leader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_lis_flower"
+                    android:drawablePadding="@dimen/fifteen_margin"
+                    android:hint="@string/tv_district"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray_disabled" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_number_group_leader"
+                style="@style/TextInputLayoutStyleTroop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tv_number_group"
+                android:paddingStart="@dimen/thirty_margin"
+                android:paddingEnd="@dimen/thirty_margin"
+                app:errorEnabled="true"
+                app:hintTextColor="@color/primary_blue_kerchief">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_number_group_leader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_lis_flower"
+                    android:drawablePadding="@dimen/fifteen_margin"
+                    android:hint="@string/tv_number_group"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray_disabled" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_name_group_leader"
+                style="@style/TextInputLayoutStyleTroop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tv_name_group"
+                android:paddingStart="@dimen/thirty_margin"
+                android:paddingEnd="@dimen/thirty_margin"
+                app:errorEnabled="true"
+                app:hintTextColor="@color/primary_blue_kerchief">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_name_group_leader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_lis_flower"
+                    android:drawablePadding="@dimen/fifteen_margin"
+                    android:hint="@string/tv_name_group"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray_disabled" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_name_patrol_leader"
+                style="@style/TextInputLayoutStyleTroop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tv_name_patrol"
+                android:paddingStart="@dimen/thirty_margin"
+                android:paddingEnd="@dimen/thirty_margin"
+                app:errorEnabled="true"
+                app:hintTextColor="@color/primary_blue_kerchief">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_name_patrol_leader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_lis_flower"
+                    android:drawablePadding="@dimen/fifteen_margin"
+                    android:hint="@string/tv_name_patrol"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray_disabled" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_name_leader"
+                style="@style/TextInputLayoutStyleTroop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tv_name_lider"
+                android:paddingStart="@dimen/thirty_margin"
+                android:paddingEnd="@dimen/thirty_margin"
+                android:layout_marginTop="@dimen/ten_margin"
+                app:errorEnabled="true"
+                app:hintTextColor="@color/primary_blue_kerchief">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_name_leader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_scouter"
+                    android:drawablePadding="@dimen/fifteen_margin"
+                    android:hint="@string/tv_name_lider"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray_disabled" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_link_leader"
+                style="@style/TextInputLayoutStyleTroop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tv_link_evidence"
+                android:paddingStart="@dimen/thirty_margin"
+                android:paddingEnd="@dimen/thirty_margin"
+                android:layout_marginTop="@dimen/ten_margin"
+                app:errorEnabled="true"
+                app:hintTextColor="@color/primary_blue_kerchief">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_link_leader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_link"
+                    android:drawablePadding="@dimen/fifteen_margin"
+                    android:hint="@string/tv_link_evidence"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray_disabled" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_save_register_patrol"
+            android:layout_marginStart="@dimen/twenty_five_margin"
+            android:layout_marginEnd="@dimen/twenty_five_margin"
+            style="@style/ButtonStyleTroop"
+            android:layout_width="match_parent"
+            android:text="@string/btn_save_register" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_legend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_register_success"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/twenty_margin"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_ansi_min"
+        android:layout_centerInParent="true"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_accept_dialog"
+        style="@style/ButtonStyleTroop"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/thirty_margin"
+        android:layout_alignParentBottom="true"
+        android:text="@string/btn_accept" />
+
+
+</RelativeLayout>
