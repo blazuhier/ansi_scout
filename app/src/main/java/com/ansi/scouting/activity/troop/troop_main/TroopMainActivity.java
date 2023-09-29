@@ -224,7 +224,6 @@ public class TroopMainActivity extends AppCompatActivity implements TroopMainAct
      */
     @Override
     public void openTroopEventActivity() {
-        Intent intent = new Intent(this, TroopEventActivity.class);
-        startActivity(intent);
+
     }
 }
